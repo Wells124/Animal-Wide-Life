@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f9f4;
+  color: #333;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1b5e20;
+  color: white;
+  padding: 1rem;
+}
+
+nav .logo {
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #2e7d32;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+  nav .nav-links.show {
+    display: flex;
+  }
+  nav .menu-toggle {
+    display: block;
+  }
+}
+
+/* Animal Showcase */
+.animal-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.animal-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.animal-card:hover {
+  transform: scale(1.05);
+}
+
+.animal-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Facts Section */
+#facts {
+  margin-top: 2rem;
+  text-align: center;
+  background: #e8f5e9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Map Section */
+#map {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.map-note {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
