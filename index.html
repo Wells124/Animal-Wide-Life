@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endangered Animals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">🌍 Endangered Animals</div>
+    <ul class="nav-links">
+      <li><a href="#gallery">Animals</a></li>
+      <li><a href="#facts">Facts</a></li>
+      <li><a href="#map">Map</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <header>
+    <h1>Protecting Endangered Animals</h1>
+    <p>Learn about vulnerable species and conservation efforts.</p>
+  </header>
+
+  <main>
+    <!-- Animal Showcase -->
+    <section id="gallery">
+      <h2>Animal Showcase</h2>
+      <div class="animal-grid">
+        <!-- Tiger -->
+        <div class="animal-card" onclick="showFact('tiger')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Tiger">
+          <h3>Tiger</h3>
+        </div>
+
+        <!-- Sea Turtle -->
+        <div class="animal-card" onclick="showFact('seaTurtle')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Sea_turtle.jpg" alt="Sea Turtle">
+          <h3>Sea Turtle</h3>
+        </div>
+
+        <!-- Giant Panda -->
+        <div class="animal-card" onclick="showFact('panda')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG" alt="Panda">
+          <h3>Giant Panda</h3>
+        </div>
+
+        <!-- African Elephant -->
+        <div class="animal-card" onclick="showFact('elephant')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" alt="African Elephant">
+          <h3>African Elephant</h3>
+        </div>
+
+        <!-- Polar Bear -->
+        <div class="animal-card" onclick="showFact('polarBear')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Polar_Bear_-_Alaska.jpg" alt="Polar Bear">
+          <h3>Polar Bear</h3>
+        </div>
+
+        <!-- Orangutan -->
+        <div class="animal-card" onclick="showFact('orangutan')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Orangutan_in_Borneo.jpg" alt="Orangutan">
+          <h3>Orangutan</h3>
+        </div>
+
+        <!-- Blue Whale -->
+        <div class="animal-card" onclick="showFact('blueWhale')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Bluewhale_1.jpg" alt="Blue Whale">
+          <h3>Blue Whale</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conservation Facts -->
+    <section id="facts">
+      <h2>Conservation Facts</h2>
+      <p id="fact-box">Click an animal to learn more!</p>
+    </section>
+
+    <!-- Interactive Map -->
+    <section id="map">
+      <h2>Where They Live</h2>
+      <iframe 
+        src="https://www.google.com/maps/d/embed?mid=1XzKzYzYzYzYzYzYzYzYzYzYzYzYzYzY" 
+        width="100%" height="480">
+      </iframe>
+      <p class="map-note">Explore regions where endangered animals are found.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Endangered Animals Awareness</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
